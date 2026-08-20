@@ -4,12 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Length Converter</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
+<header>
+    <a href="meter_convert.html"> Length Converter</a>
+    <a href="weight.html"> Weight Converter</a>
+    <a href="temperature.html"> Temperature Converter</a>
+</header>
+
 <body>
 
-    <h1>Length Converter</h1>
-
     <form action="" method="POST">
+
+        <h1>Length Converter</h1>
 
         <label for="unit_length">Unit Value:</label>
         <input type="number" name="unit_length" id="unit_length" step="any" required>
@@ -44,9 +52,19 @@
 
         <br><br>
 
+        <div class="result">
+            <h2>Result</h2>
+            <p>10 km = 6.21371 mi</p>
+        </div>
+    
+        <br>
+        
         <button type="submit">Convert</button>
+        <br><br>
+        <button type="reset">Reset</button>
 
     </form>
+
 
 </body>
 </html>
