@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weight Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<header>
+    <a href="meter_convert.html"> Length Converter</a>
+    <a href="weight.html"> Weight Converter</a>
+    <a href="temperature.html"> Temperature Converter</a>
+</header>
+
+<body>
+
+
+    <form action="http://localhost:8000/weight_convert" method="POST">
+
+        <h1>Weight Converter</h1>
+
+        <label for="value">Weight Value:</label>
+        <input type="number" name="value" id="value" step="any" required>
+
+        <br><br>
+
+        <label for="froms">From:</label>
+        <select name="froms" id="froms">
+            <option value="mg">Milligram (mg)</option>
+            <option value="g">Gram (g)</option>
+            <option value="kg">Kilogram (kg)</option>
+            <option value="oz">Ounce (oz)</option>
+            <option value="lb">Pound (lb)</option>
+        </select>
+
+        <br><br>
+
+        <label for="to">To:</label>
+        <select name="to" id="to">
+            <option value="mg">Milligram (mg)</option>
+            <option value="g">Gram (g)</option>
+            <option value="kg">Kilogram (kg)</option>
+            <option value="oz">Ounce (oz)</option>
+            <option value="lb">Pound (lb)</option>
+        </select>
+
+        <br><br>
+
+        <div class="result">
+            <h2>Result</h2>
+            <p>10 km = 6.21371 mi</p>
+        </div>
+
+        <br>
+        
+        <button type="submit">Convert</button>
+        <br><br>
+        <button type="reset">Reset</button>
+
+    </form>
+
+</body>
+</html>
