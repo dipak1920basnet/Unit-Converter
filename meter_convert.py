@@ -9,11 +9,13 @@ UNIT_TO_METER = {
     "mi": 1609.344,
 }
 
-def Convert(Units:int|float, froms:dict.keys, to):
+
+def Convert(Units: int | float, froms: dict.keys, to):
     meter = Units * UNIT_TO_METER[froms]
-    conversion = meter/UNIT_TO_METER[to]
+    conversion = meter / UNIT_TO_METER[to]
 
     return conversion
+
 
 if __name__ == "__main__":
     froms = "km"
